@@ -365,7 +365,9 @@ export default {
         if (gender !== undefined){
           this.patientInfo.gender = gender===1 ? '男' : '女';
         }
-        this.patientInfo.gpt = "chatgpt的意见"
+        if (this.patientInfo.gpt === undefined){
+          this.patientInfo.gpt = "缺少ChatGPT的意见"
+        }
         this.getImage();
       }).catch((error) => {
         console.log(error)
