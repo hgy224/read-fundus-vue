@@ -229,8 +229,8 @@ export default {
       },{
         title: "适量运动",
         choose: ["该患者提倡中等强度 (50%~70%最大心率*，每周150分钟）",
-          "该患者消瘦，应通过合理的营养计划达到并长期维持理想体重",
-          "维持目前体重"]
+          "该患者提倡低强度（30%~50%最大心率*，每周100分钟）",
+          "该患者伴有急性并发症或严重慢性并发症，不应采取运动治疗"]
       },{
         title: "戒烟戒酒",
         choose: ["该患者应科学戒烟，有饮酒习惯的应当戒酒",
@@ -371,6 +371,8 @@ export default {
         this.getImage();
       }).catch((error) => {
         console.log(error)
+        this.back();
+        this.$message.error("请登录!");
       });
     },
     getImage(){

@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     getAllDataset(){ // 查询所有可以用的眼底数据集
-      const url = '/dataset/use'
+      const url = '/dataset/use/0'
       this.axios.get(url).then((res) => {
         this.dataset = res.data.data;
       }).catch((error) => {

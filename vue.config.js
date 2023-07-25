@@ -10,7 +10,7 @@ module.exports = defineConfig({
 //     open: true,
 //     proxy: {
 //       '/api':{
-//         target: 'http://localhost:5000', //接口域名
+//         target: 'http://localhost:5001', //接口域名
 //         // target: 'http://120.26.103.180:5000', //接口域名
 //         changeOrigin: true,             //是否跨域
 //         secure: false,                   //是否https接口
